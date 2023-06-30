@@ -152,7 +152,7 @@ img {
   color: var(--navi-blue-color);
   padding-top: 24px;
   padding-bottom: 24px;
-  transition: var(--transition);
+  transition: color var(--transition);
 }
 
 .header-link:hover {
@@ -196,6 +196,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate-color);
+  transition: color var(--transition);
 }
 
 .adress-link:hover {
@@ -442,39 +443,45 @@ img {
   justify-content: center;
   color: var(--light-slate-color);
   transition: border-color var(--transition), color var(--transition);
-}
-.customers-icon {
-  transition: fill, var(--transition);
+  transition: fill var(--transition);
   fill: var(--light-slate-color);
 }
-
-.customers-icon:hover {
-  fill: var(--ocean-color);
+.customers-icon {
+  fill: currentColor;
+  transition: var(--transition);
 }
 
 .customers-link:hover {
   border-color: var(--ocean-color);
   color: var(var(--ocean-color));
+  fill: var(--ocean-color);
 }
 
 .customers-link:focus {
   border-color: var(--ocean-color);
   color: var(var(--ocean-color));
+  fill: var(--ocean-color);
 }
 
-.customers-icon:hover {
+/* .customers-icon:hover {
   border-color: var(--ocean-color);
   color: var(var(--ocean-color));
+  fill: var(--ocean-color);
 }
 
 .customers-icon:focus {
   border-color: var(--ocean-color);
   color: var(var(--ocean-color));
-}
+  fill: var(--ocean-color);
+} */
 
-.customers-link:hover {
+/* .customers-link:hover {
   fill: var(--ocean-color);
 }
+
+.customers-link:focus {
+  fill: var(--ocean-color);
+} */
 
 /* footer */
 .footer {
