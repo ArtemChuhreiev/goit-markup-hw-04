@@ -445,25 +445,27 @@ img {
   transition: border-color var(--transition), color var(--transition);
   transition: fill var(--transition);
   fill: var(--light-slate-color);
+  fill: currentColor;
 }
 .customers-icon {
-  fill: currentColor;
-  transition: var(--transition);
+  transition: color var(--transition);
 }
 
 .customers-link:hover {
   border-color: var(--ocean-color);
   color: var(var(--ocean-color));
   fill: var(--ocean-color);
+  transition: var(--transition);
 }
 
 .customers-link:focus {
   border-color: var(--ocean-color);
   color: var(var(--ocean-color));
   fill: var(--ocean-color);
+  transition: var(--transition);
 }
 
-/* .customers-icon:hover {
+.customers-icon:hover {
   border-color: var(--ocean-color);
   color: var(var(--ocean-color));
   fill: var(--ocean-color);
@@ -473,15 +475,14 @@ img {
   border-color: var(--ocean-color);
   color: var(var(--ocean-color));
   fill: var(--ocean-color);
-} */
-
-/* .customers-link:hover {
+}
+*/ .customers-link:hover {
   fill: var(--ocean-color);
 }
 
 .customers-link:focus {
   fill: var(--ocean-color);
-} */
+}
 
 /* footer */
 .footer {
